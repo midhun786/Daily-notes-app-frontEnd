@@ -1,4 +1,3 @@
 export const env ={
-   
-     api :"https://notes-maker-backend.vercel.app"
-     }
+    api :"https://daily-notes-app-back-end.vercel.app"
+}
