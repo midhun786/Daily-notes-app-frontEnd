@@ -6,9 +6,9 @@ import { Link, useNavigate } from "react-router-dom";
 function Login() {
     let navigate = useNavigate();
     
-    let login=()=>{
-      navigate("/portal/home")
-    }
+    // let login=()=>{
+    //   navigate("/portal/home")
+    // }
   
     let formik = useFormik({
       initialValues: {
@@ -119,7 +119,7 @@ function Login() {
                           <button
                             type="submit"
                             className="btn btn-outline-secondary container fw-bold myname"
-                          onClick={()=>login()}
+                          // onClick={()=>login()}
                           >
                             LOGIN
                           </button>

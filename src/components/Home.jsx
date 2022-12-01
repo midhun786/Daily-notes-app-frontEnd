@@ -7,9 +7,9 @@ function Home() {
   const [notes, setNotes] = useState([]);
   const [token, setToken] = useState("");
   useEffect(() => {
-      const token = window.localStorage.getItem("app-token");
+    const token = window.localStorage.getItem("app-token");
 
-     setToken(token);
+    setToken(token);
     if (token) {
       getNotes(token);
     }
@@ -23,18 +23,18 @@ function Home() {
     setNotes(res.data);
   };
 
-  const deleteNote = async (id) =>{
-try{
-if(window.localStorage.getItem("app-token") ){
-await axios.delete(`${env.api}/api/notes/${id}`, {
-  headers: { Authorization: window.localStorage.getItem("app-token") },
-});
-getNotes();
+  const deleteNote = async (id) => {
+    try {
+      if (window.localStorage.getItem("app-token")) {
+        await axios.delete(`${env.api}/api/notes/${id}`, {
+          headers: { Authorization: window.localStorage.getItem("app-token") },
+        });
+        getNotes();
 
-}
-}catch(error){
-window.location.href='/';
-}
+      }
+    } catch (error) {
+      window.location.href = '/';
+    }
   }
 
   return (
@@ -66,7 +66,7 @@ window.location.href='/';
                     Edit
                   </Link>
                 </div>
-                <button className="bg-transparent btn btn-outline-none text-light position-absolute top-0 end-0" onClick={()=>deleteNote(note._id)}>
+                <button className="bg-transparent btn btn-outline-none text-light position-absolute top-0 end-0" onClick={() => deleteNote(note._id)}>
                   X
                 </button>
               </div>
