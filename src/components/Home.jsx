@@ -5,14 +5,14 @@ import axios from "axios";
 import { env } from "../config";
 function Home() {
   const [notes, setNotes] = useState([]);
-  //const [token, setToken] = useState("");
+  const [token, setToken] = useState("");
   useEffect(() => {
-    //   const token = window.localStorage.getItem("app-token");
+      const token = window.localStorage.getItem("app-token");
 
-    //  setToken(token);
-    // if (token) {
-    //   getNotes(token);
-    // }
+     setToken(token);
+    if (token) {
+      getNotes(token);
+    }
     getNotes();
   }, []);
   let getNotes = async () => {
