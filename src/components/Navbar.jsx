@@ -10,7 +10,7 @@ function Navbar() {
   return (
     <>
       <nav
-        className="navbar navbar-expand-lg mynav fixed-top"
+        className="navbar navbar-expand-lg prop0 fixed-top"
         style={{ position: "sticky" }}
       >
         <div className="container-fluid">
