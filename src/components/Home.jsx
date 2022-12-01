@@ -48,7 +48,7 @@ function Home() {
             >
               <div
                 className="card cards h-100  mb-3"
-                style={{ background: "rgb(7,25,63)" }}
+                style={{ background: "rgb(128, 128, 128)" }}
               >
                 <div className="card-body ">
                   <h5 className="card-title text-center pb-3 text-uppercase">

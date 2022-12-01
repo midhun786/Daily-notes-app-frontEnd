@@ -116,7 +116,7 @@ function EditNote() {
             <div className='text-center '>
 
               <input
-                className='btn btn-outline-primary'
+                className='btn btn-outline-secondary'
                 type={'submit'}
                 value='Submit'
                 disabled={!formik.isValid}

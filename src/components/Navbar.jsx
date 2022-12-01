@@ -53,7 +53,7 @@ function Navbar() {
              
               <li className="nav-item dropdown">
           <img
-            src="https://mdbcdn.b-cdn.net/img/new/avatars/7.webp"
+            src="https://mdbcdn.b-cdn.net/img/new/avatars/9.webp"
             className=" nav-link dropdown-toggle rounded-circle"
             style={{height :'3rem',width:'3rem'}}
             alt="Black and White Portrait of a Man"
