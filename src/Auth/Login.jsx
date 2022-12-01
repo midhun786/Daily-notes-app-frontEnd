@@ -33,19 +33,19 @@ function Login() {
           let loginData = await axios.post(`${env.api}/users/login`, values);
           console.log(loginData);
   
-          // if (loginData.data.token) {
-          //   if (loginData.status === 200) {
+          if (loginData.data.token) {
+            if (loginData.status === 200) {
   
-          //     navigate("/portal/home");
-          //     window.localStorage.setItem("app-token", loginData.data.token);
-          //     window.localStorage.setItem("userid", loginData.data.user._id);
-          //     window.localStorage.setItem("username", loginData.data.user.username);
-          //     window.localStorage.setItem("useremail", loginData.data.user.email);
+              navigate("/portal/home");
+              window.localStorage.setItem("app-token", loginData.data.token);
+              window.localStorage.setItem("userid", loginData.data.user._id);
+              window.localStorage.setItem("username", loginData.data.user.username);
+              window.localStorage.setItem("useremail", loginData.data.user.email);
              
-          //   }
-          // } else {
-          //   alert(loginData.data.message);
-          // }
+            }
+          } else {
+            alert(loginData.data.message);
+          }
         } catch (error) {
           alert(error.response.data.message);
           console.log(error);
@@ -62,7 +62,7 @@ function Login() {
       
         <div className="container login">
           <span className="row d-flex align-content-center justify-content-center ">
-            <span className="col-lg-4 col-md-6 col-sm-9 pt-5 ">
+            <span className="col-lg-5 col-md-6 col-sm-9 pt-5 ">
            
               <div className="card o-hidden border-0 shadow-lg  mt-3 transp pt-5 d-flex align-content-center">
                 <div className="card-body p-2">
@@ -131,8 +131,9 @@ function Login() {
                           </p>
                         </div>
                         <div className='text-center fw-bold pt-4 pb-4 '>
-                      <p>User Crendential :midhunkumarengineer98@gmail.com <br/>
-                         password :12345678 
+                      <p> <strong>User Crendential </strong> <br/>
+                        Email:midhunkumarengineer98@gmail.com <br/>
+                         Password :12345678 
                            </p>
                       
                       </div>
