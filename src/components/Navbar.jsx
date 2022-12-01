@@ -16,7 +16,7 @@ function Navbar() {
         <div className="container-fluid">
       
           <a className="navbar-brand " href="#" id="kir">
-            <span id="kiru">Daily</span>
+            <span id="kiru" style={{color:"rgb(255, 199, 92)"}}>Daily</span>
             <span className=""> Notes</span>
           </a>
          
