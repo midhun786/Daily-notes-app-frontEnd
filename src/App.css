@@ -123,3 +123,10 @@ background-size: cover;
      transform: scale(1.05);
   box-shadow: 0 10px 20px rgba(0,0,0,.12), 0 4px 8px rgba(0,0,0,.06);
 }
+.prop0{
+  /* Created with https://www.css-gradient.com */
+background: #01060C;
+background: -webkit-linear-gradient(top, #01060C, #520353);
+background: -moz-linear-gradient(top, #01060C, #520353);
+background: linear-gradient(to bottom, #01060C, #520353);
+}

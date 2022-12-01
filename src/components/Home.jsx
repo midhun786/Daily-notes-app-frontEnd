@@ -47,8 +47,8 @@ function Home() {
               key={note._id}
             >
               <div
-                className="card cards h-100  mb-3"
-                style={{ background: "rgb(128, 128, 128)" }}
+                className="card cards h-100  mb-3 prop0"
+                // style={{ background: "rgb(128, 128, 128)" }}
               >
                 <div className="card-body ">
                   <h5 className="card-title text-center pb-3 text-uppercase">
